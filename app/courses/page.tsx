@@ -14,7 +14,7 @@ const courses = [
         subjects: "Science, Maths, English, SST",
         duration: "1 Year",
         link: "#",
-        image: "image 2.png"
+        image: "/image 2.png"
     },
     {
         title: "Class XII Board Prep",
@@ -38,7 +38,7 @@ const courses = [
         subjects: "Physics, Chemistry, Biology",
         duration: "2 Years",
         link: "#",
-        image: "image4.png"
+        image: "/image4.png"
     },
     {
         title: "Crash Course (JEE/NEET)",
@@ -46,7 +46,7 @@ const courses = [
         subjects: "PCB / PCM",
         duration: "3 Months",
         link: "#",
-        image: "image 5.png"
+        image: "/image 5.png"
     },
     {
         title: "English Spoken & Personality Dev",
@@ -54,7 +54,7 @@ const courses = [
         subjects: "English, Soft Skills",
         duration: "6 Months",
         link: "#",
-        image: "image 6.png"
+        image: "/image 6.png"
     }
 ];
 
