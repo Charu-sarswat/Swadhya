@@ -21,13 +21,13 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="relative w-full h-screen min-h-[600px] flex items-center justify-center text-white overflow-hidden">
+        <section className="relative w-full h-screen min-h-[600px] flex items-center justify-center text-white overflow-hidden pt-16 md:pt-20">
 
             {/* Background Carousel */}
             {heroImages.map((image, index) => (
                 <div
                     key={index}
-                    className={`absolute inset-0 bg-[length:100%_100%] bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? "opacity-100" : "opacity-0"
+                    className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? "opacity-100" : "opacity-0"
                         }`}
                     style={{
                         backgroundImage: `url('${image}')`,

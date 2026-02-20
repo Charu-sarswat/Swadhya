@@ -9,10 +9,11 @@ interface CourseCardProps {
     duration?: string;
     subjects?: string;
     image?: string;
-    link: string;
+    slug: string;
 }
 
-const CourseCard = ({ title, description, duration, subjects, image, link }: CourseCardProps) => {
+const CourseCard = ({ title, description, duration, subjects, image, slug }: CourseCardProps) => {
+    const detailLink = `/courses/${slug}`;
     return (
         <div className="bg-white rounded-xl border border-gray-100 hover:border-highlight overflow-hidden duration-300 flex flex-col h-full" data-aos="fade-up">
             {/* Image (Optional/Placeholder) */}
@@ -47,7 +48,7 @@ const CourseCard = ({ title, description, duration, subjects, image, link }: Cou
                     </div>
                 )}
 
-                <Link href={link} className="w-full mt-auto py-1.5 border border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-white transition-colors text-center inline-block text-sm">
+                <Link href={detailLink} className="w-full mt-auto py-1.5 border border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-white transition-colors text-center inline-block text-sm">
                     View Details
                 </Link>
             </div>
