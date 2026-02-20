@@ -16,38 +16,38 @@ const CourseCard = ({ title, description, duration, subjects, image, link }: Cou
     return (
         <div className="bg-white rounded-xl border border-gray-100 hover:border-highlight overflow-hidden duration-300 flex flex-col h-full" data-aos="fade-up">
             {/* Image (Optional/Placeholder) */}
-            <div className="h-48 bg-primary/10 overflow-hidden relative group">
+            <div className="h-40 md:h-48 bg-primary/10 overflow-hidden relative group">
                 {image ? (
                     <img src={image} alt={title} className="w-full h-full object-cover" />
                 ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-secondary/20 text-secondary text-5xl">
+                    <div className="w-full h-full flex items-center justify-center bg-secondary/20 text-secondary text-4xl">
                         <FiBookOpen />
                     </div>
                 )}
             </div>
 
-            <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-xl font-bold font-poppins text-primary mb-2 line-clamp-1">{title}</h3>
+            <div className="p-4 md:p-5 flex-1 flex flex-col">
+                <h3 className="text-lg md:text-xl font-bold font-poppins text-primary mb-1.5 line-clamp-1">{title}</h3>
 
                 {duration && (
-                    <div className="text-sm text-gray-500 mb-2 flex items-center gap-1">
-                        <FiClock size={14} /> {duration}
+                    <div className="text-xs text-gray-500 mb-1.5 flex items-center gap-1">
+                        <FiClock size={12} /> {duration}
                     </div>
                 )}
 
-                <p className="text-gray-600 mb-4 line-clamp-3 text-sm flex-1">
+                <p className="text-gray-600 mb-3 line-clamp-3 text-xs md:text-sm flex-1">
                     {description}
                 </p>
 
                 {subjects && (
-                    <div className="mb-4 flex flex-wrap gap-2 text-xs font-medium text-highlight">
+                    <div className="mb-3 flex flex-wrap gap-2 text-[10px] font-medium text-highlight">
                         {subjects.split(',').map(s => (
-                            <span key={s} className="px-2 py-1 bg-highlight/10 rounded-full">{s.trim()}</span>
+                            <span key={s} className="px-2 py-0.5 bg-highlight/10 rounded-full">{s.trim()}</span>
                         ))}
                     </div>
                 )}
 
-                <Link href={link} className="w-full mt-auto py-2 border border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-white transition-colors text-center inline-block">
+                <Link href={link} className="w-full mt-auto py-1.5 border border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-white transition-colors text-center inline-block text-sm">
                     View Details
                 </Link>
             </div>

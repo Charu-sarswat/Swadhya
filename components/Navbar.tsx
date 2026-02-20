@@ -68,14 +68,34 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* Mobile Dropdown */}
-            {isOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 flex flex-col gap-4 px-6 animate-fade-in">
+            {/* Mobile Sidebar Overlay (Backdrop) */}
+            {/* <div
+                className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 md:hidden ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                    }`}
+                onClick={() => setIsOpen(false)}
+            /> */}
+
+            {/* Mobile Sidebar (Drawer) */}
+            <div
+                className={`fixed top-0 right-0 h-full w-[280px] bg-white z-50 shadow-2xl transition-transform duration-300 ease-in-out md:hidden flex flex-col ${isOpen ? "translate-x-0" : "translate-x-full"
+                    }`}
+            >
+                <div className="flex justify-between items-center p-6 border-b">
+                    <div className="text-xl font-bold font-poppins text-primary">Menu</div>
+                    <button
+                        className="text-2xl text-primary"
+                        onClick={() => setIsOpen(false)}
+                    >
+                        <FiX />
+                    </button>
+                </div>
+
+                <div className="flex flex-col gap-2 p-6 overflow-y-auto">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
                             href={link.path}
-                            className={`text-lg font-medium ${pathname === link.path ? "text-accent" : "text-gray-800"
+                            className={`text-lg font-semibold py-2 transition-colors ${pathname === link.path ? "text-accent" : "text-gray-800"
                                 }`}
                             onClick={() => setIsOpen(false)}
                         >
@@ -84,13 +104,13 @@ const Navbar = () => {
                     ))}
                     <Link
                         href="/contact"
-                        className="w-full text-center py-3 bg-accent text-white rounded-lg font-semibold"
+                        className="mt-6 w-full text-center py-3 bg-accent text-white rounded-lg font-bold shadow-lg shadow-accent/20"
                         onClick={() => setIsOpen(false)}
                     >
                         Book Free Demo
                     </Link>
                 </div>
-            )}
+            </div>
         </nav>
     );
 };

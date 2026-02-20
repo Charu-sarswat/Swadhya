@@ -8,16 +8,7 @@ export const metadata: Metadata = {
     description: 'Our students achievements and moments of pride.',
 };
 
-const topResults = [
-    { name: "Aditya Kumar", rank: "AIR 45", exam: "JEE Advanced 2024", image: "/st1.png", year: "2024" },
-    { name: "Riya Sharma", rank: "AIR 12", exam: "NEET 2024", image: "/st3.png", year: "2024" },
-    { name: "Karan Singh", rank: "99.8%", exam: "CBSE Class XII", image: "/st1.png", year: "2024" },
-    { name: "Sneha Gupta", rank: "98.5%", exam: "ICSE Class X", image: "/st3.png", year: "2024" },
-    { name: "Rahul Verma", rank: "AIR 1024", exam: "JEE Mains 2024", image: "/st1.png", year: "2024" },
-    { name: "Pooja Das", rank: "680/720", exam: "NEET 2023", image: "/st3.png", year: "2023" },
-    { name: "Amit Patel", rank: "AIR 89", exam: "JEE Advanced 2023", image: "/st1.png", year: "2023" },
-    { name: "Suresh Kumar", rank: "97.2%", exam: "CBSE Class XII", image: "/st1.png", year: "2023" }
-];
+import { topResults } from "@/lib/data";
 
 export default function Results() {
     return (
