@@ -8,14 +8,14 @@ const Testimonials = [
         id: 1,
         name: "Aarav Sharma",
         role: "IIT JEE Rank 124",
-        text: "Swadhaya Institute provided me with the structured guidance I needed. The faculty is incredible and cleared all my doubts instantly.",
+        text: "Swadhyay Institute provided me with the structured guidance I needed. The faculty is incredible and cleared all my doubts instantly.",
         image: "/st1.png"
     },
     {
         id: 2,
         name: "Sneha Gupta",
         role: "NEET Top Scorer",
-        text: "The regular mock tests and personalized feedback helped me improve my weak areas. I highly recommend Swadhaya to all aspirants.",
+        text: "The regular mock tests and personalized feedback helped me improve my weak areas. I highly recommend Swadhyay to all aspirants.",
         image: "/st3.png"
     },
     {
@@ -29,7 +29,7 @@ const Testimonials = [
         id: 4,
         name: "Priya Singh",
         role: "Class X Scorer",
-        text: "Foundational courses at Swadhaya built my concepts strong early on. It made my transition to higher classes very smooth.",
+        text: "Foundational courses at Swadhyay built my concepts strong early on. It made my transition to higher classes very smooth.",
         image: "/st3.png"
     }
 ];

@@ -3,7 +3,7 @@ import { FiClock, FiUsers, FiAward, FiTarget, FiEye } from "react-icons/fi";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About Us - Swadhaya Coaching Institute',
+    title: 'About Us - Swadhyay Coaching Institute',
     description: 'Our mission is to empower students through quality education.',
 };
 
@@ -27,12 +27,12 @@ export default function About() {
                     <div className="max-w-4xl mx-auto text-center" data-aos="fade-up">
                         <div>
                             <SectionTitle
-                                title="About Swadhaya"
-                                subtitle={<span className="font-bold text-gray-800">Founded in 2010, SWADHAYA has been a beacon of hope and guidance for thousands of students.</span>}
+                                title="About Swadhyay"
+                                subtitle={<span className="font-bold text-gray-800">Founded in 2010, SWADHYAY has been a beacon of hope and guidance for thousands of students.</span>}
                                 center={true}
                             />
                             <p className="text-gray-800 font-bold mb-6 text-lg leading-relaxed">
-                                At Swadhaya, we believe that every student has the potential to achieve greatness. Our methodology is not just about teaching, but about fast-tracking the learning process through innovative techniques and personalized attention.
+                                At Swadhyay, we believe that every student has the potential to achieve greatness. Our methodology is not just about teaching, but about fast-tracking the learning process through innovative techniques and personalized attention.
                             </p>
                             <p className="text-gray-800 font-bold mb-6 text-lg leading-relaxed">
                                 Over the last decade, we have consistently produced top rankers in JEE, NEET, and Board exams. Our alumni are now studying in prestigious institutions like IITs, NITs, AIIMS, and top international universities.

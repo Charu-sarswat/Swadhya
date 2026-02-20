@@ -4,7 +4,7 @@ import GalleryGrid from "@/components/GalleryGrid";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Results & Gallery - Swadhaya Coaching Institute',
+    title: 'Results & Gallery - Swadhyay Coaching Institute',
     description: 'Our students achievements and moments of pride.',
 };
 
@@ -36,7 +36,7 @@ export default function Results() {
                 </div>
 
                 <SectionTitle
-                    title={<>Life at <span className="text-black">Swadhaya</span></>}
+                    title={<>Life at <span className="text-black">Swadhyay</span></>}
                     subtitle="Glimpses of our classrooms, events, and celebrations."
                     center
                 />

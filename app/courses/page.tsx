@@ -3,7 +3,7 @@ import CourseCard from "@/components/CourseCard";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Courses - Swadhaya Coaching Institute',
+    title: 'Courses - Swadhyay Coaching Institute',
     description: 'Explore our comprehensive courses for Class X, XII, JEE, and NEET.',
 };
 

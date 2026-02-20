@@ -19,7 +19,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Swadhaya Coaching Institute",
+  title: "Swadhyay Coaching Institute",
   description: "Excellence in Education - Preparing students for JEE, NEET, and Boards.",
 };
 

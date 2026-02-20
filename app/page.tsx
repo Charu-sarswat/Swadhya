@@ -91,7 +91,7 @@ export default function Home() {
       <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-8">
           <SectionTitle
-            title={<>Why Choose <span className="text-black">Swadhaya?</span></>}
+            title={<>Why Choose <span className="text-black">Swadhyay?</span></>}
             subtitle="We focus on conceptual clarity and result-oriented learning methodology."
           />
 
@@ -165,38 +165,38 @@ export default function Home() {
       </section>
 
       {/* Faculty */}
-      <section className="py-12 md:py-20 container mx-auto px-4 md:px-8">
-        <div className="bg-primary rounded-[3rem] p-8 md:p-16 text-white text-center md:text-left relative overflow-hidden shadow-none" data-aos="fade-up">
+      <section className="py-8 md:py-12 container mx-auto px-4 md:px-8">
+        <div className="bg-primary rounded-3xl sm:rounded-[2rem] p-6 sm:p-8 md:p-10 text-white text-center lg:text-left relative overflow-hidden shadow-none" data-aos="fade-up">
 
           {/* Decorative Background Elements */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
-          <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16 border-b border-white/10 pb-8">
+          <div className="relative z-10 flex flex-col lg:flex-row justify-between items-center lg:items-end gap-6 mb-8 border-b border-white/10 pb-6">
             <div>
-              <h2 className="text-3xl md:text-5xl font-poppins text-gray-400">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-poppins text-gray-400 leading-tight">
                 Meet Our <br />
                 <span className="text-white font-bold">Expert Faculty</span>
               </h2>
             </div>
-            <p className="max-w-md text-gray-300 text-sm md:text-base leading-relaxed">
+            <p className="max-w-md text-gray-300 text-sm sm:text-base leading-relaxed mx-auto lg:mx-0">
               Our professional educators are here to provide you with the tools, techniques, and insights you need to excel in your chosen field.
             </p>
           </div>
 
-          <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="relative z-10 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
             {featuredFaculty.map((f, idx) => (
               <div key={idx} className="flex flex-col items-center text-center group">
-                <div className="w-48 h-48 rounded-full p-1 border-2 border-white/20 mb-6 relative">
+                <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-full p-1 border-2 border-white/20 mb-2 sm:mb-3 relative">
                   <img
                     src={f.image}
                     alt={f.name}
                     className="w-full h-full object-cover rounded-full transition-all duration-500 transform group-hover:scale-105"
                   />
                 </div>
-                <h3 className="text-xl font-bold font-poppins mb-1">{f.name}</h3>
-                <div className="text-accent text-sm font-semibold uppercase tracking-wider mb-4">{f.role}</div>
-                <p className="text-gray-400 text-xs leading-relaxed max-w-[200px]">
+                <h3 className="text-sm sm:text-lg font-bold font-poppins mb-1">{f.name}</h3>
+                <div className="text-accent text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-2">{f.role}</div>
+                <p className="text-gray-400 text-[10px] sm:text-xs leading-relaxed max-w-[140px] sm:max-w-[180px]">
                   {f.description}
                 </p>
               </div>

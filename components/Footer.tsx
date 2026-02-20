@@ -12,19 +12,19 @@ const Footer = () => {
                 {/* Brand */}
                 <div className="col-span-1 md:col-span-1">
                     <Link href="/" className="text-3xl font-bold font-poppins mb-4 block text-[var(--color-primary)]">
-                        Swadhaya
+                        Swadhyay
                     </Link>
-                    <p className="text-gray-300 mb-6">
+                    <p className="text-white mb-6">
                         Empowering students with knowledge and skills for a brighter future.
                     </p>
                     <div className="flex space-x-4">
-                        <Link href="#" className="p-2 bg-secondary/20 rounded-full hover:bg-accent transition-colors">
+                        <Link href="#" className="p-2 bg-secondary/20 rounded-full hover:bg-yellow-400 hover:text-black transition-colors">
                             <FiFacebook size={20} />
                         </Link>
-                        <Link href="#" className="p-2 bg-secondary/20 rounded-full hover:bg-accent transition-colors">
+                        <Link href="#" className="p-2 bg-secondary/20 rounded-full hover:bg-yellow-400 hover:text-black transition-colors">
                             <FiTwitter size={20} />
                         </Link>
-                        <Link href="#" className="p-2 bg-secondary/20 rounded-full hover:bg-accent transition-colors">
+                        <Link href="#" className="p-2 bg-secondary/20 rounded-full hover:bg-yellow-400 hover:text-black transition-colors">
                             <FiInstagram size={20} />
                         </Link>
                     </div>
@@ -34,11 +34,11 @@ const Footer = () => {
                 <div>
                     <h3 className="text-lg font-semibold mb-4 text-[var(--color-primary)] font-sans"><span className="text-black">Quick</span> Links</h3>
                     <ul className="space-y-2">
-                        <li><Link href="/about" className="hover:text-accent transition-colors">About Us</Link></li>
-                        <li><Link href="/courses" className="hover:text-accent transition-colors">Our Courses</Link></li>
-                        <li><Link href="/faculty" className="hover:text-accent transition-colors">Our Faculty</Link></li>
-                        <li><Link href="/results" className="hover:text-accent transition-colors">Recent Results</Link></li>
-                        <li><Link href="/contact" className="hover:text-accent transition-colors">Contact Us</Link></li>
+                        <li><Link href="/about" className="hover:text-yellow-400 transition-colors">About Us</Link></li>
+                        <li><Link href="/courses" className="hover:text-yellow-400 transition-colors">Our Courses</Link></li>
+                        <li><Link href="/faculty" className="hover:text-yellow-400 transition-colors">Our Faculty</Link></li>
+                        <li><Link href="/results" className="hover:text-yellow-400 transition-colors">Recent Results</Link></li>
+                        <li><Link href="/contact" className="hover:text-yellow-400 transition-colors">Contact Us</Link></li>
                     </ul>
                 </div>
 
@@ -46,31 +46,41 @@ const Footer = () => {
                 <div>
                     <h3 className="text-lg font-semibold mb-4 text-[var(--color-primary)] font-sans"><span className="text-black">Popular</span> Courses</h3>
                     <ul className="space-y-2">
-                        <li><Link href="/courses" className="hover:text-accent transition-colors">Class X Foundation</Link></li>
-                        <li><Link href="/courses" className="hover:text-accent transition-colors">Class XII Boards</Link></li>
-                        <li><Link href="/courses" className="hover:text-accent transition-colors">JEE / NEET Prep</Link></li>
-                        <li><Link href="/courses" className="hover:text-accent transition-colors">English Spoken</Link></li>
+                        <li><Link href="/courses" className="hover:text-yellow-400 transition-colors">Class X Foundation</Link></li>
+                        <li><Link href="/courses" className="hover:text-yellow-400 transition-colors">Class XII Boards</Link></li>
+                        <li><Link href="/courses" className="hover:text-yellow-400 transition-colors">JEE / NEET Prep</Link></li>
+                        <li><Link href="/courses" className="hover:text-yellow-400 transition-colors">English Spoken</Link></li>
                     </ul>
                 </div>
 
                 {/* Contact Info */}
                 <div>
                     <h3 className="text-lg font-semibold mb-4 text-[var(--color-primary)] font-sans"><span className="text-black">Get In</span> Touch</h3>
-                    <address className="not-italic text-gray-300 space-y-2">
-                        <p>123 Education Street, Knowledge Park</p>
-                        <p>New Delhi, India - 110001</p>
-                        <p className="mt-4 font-semibold text-white">Call: +91 98765 43210</p>
-                        <p>Email: info@swadhaya.edu</p>
+                    <address className="not-italic text-white space-y-2 flex flex-col items-start">
+                        <a
+                            href="https://maps.app.goo.gl/x6esQfWNYgMvL4kS7?g_st=aw"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-yellow-400 transition-colors text-left"
+                        >
+                            Block A, Nandgram, Ghaziabad,<br /> Uttar Pradesh, India - 201003
+                        </a>
+                        <a href="tel:+917428258845" className="text-white hover:text-yellow-400 transition-colors">
+                            Call: +91 7428258845
+                        </a>
+                        <a href="mailto:info@swadhyay.edu" className="hover:text-yellow-400 transition-colors">
+                            Email: info@swadhyay.edu
+                        </a>
                     </address>
 
-                    <Link href="https://wa.me/919876543210" target="_blank" className="mt-6 flex items-center gap-2 px-6 py-3 bg-accent text-white rounded-lg hover:bg-accent-hover transition-colors w-fit shadow-md">
+                    <Link href="https://wa.me/917428258845" target="_blank" className="mt-6 flex items-center gap-2 px-6 py-3 bg-accent text-white rounded-lg hover:bg-accent-hover transition-colors w-fit shadow-md">
                         <FiMessageCircle size={20} /> Chat on WhatsApp
                     </Link>
                 </div>
             </div>
 
             <div className="border-t border-gray-700 mt-12 pt-8 text-center text-sm text-gray-400 relative z-10">
-                &copy; {new Date().getFullYear()} Swadhaya Coaching Institute. All rights reserved.
+                &copy; {new Date().getFullYear()} Swadhyay Coaching Institute. All rights reserved.
             </div>
         </footer >
     );

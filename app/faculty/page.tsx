@@ -3,7 +3,7 @@ import FacultyCard from "@/components/FacultyCard";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Our Faculty - Swadhaya Coaching Institute',
+    title: 'Our Faculty - Swadhyay Coaching Institute',
     description: 'Meet our experienced team of educators dedicated to student success.',
 };
 

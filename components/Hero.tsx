@@ -48,7 +48,7 @@ const Hero = () => {
                         Unlock Your <span className="text-highlight">Potential</span> With Expert Guidance
                     </h1>
                     <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
-                        Join Swadhaya Coaching Institute for comprehensive preparation, personalized attention, and proven results in competitive exams.
+                        Join Swadhyay Coaching Institute for comprehensive preparation, personalized attention, and proven results in competitive exams.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

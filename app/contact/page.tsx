@@ -4,7 +4,7 @@ import { FiMapPin, FiPhone, FiMail } from "react-icons/fi";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Contact Us - Swadhaya Coaching Institute',
+    title: 'Contact Us - Swadhyay Coaching Institute',
     description: 'Reach out to us for admissions, queries, or just to say hello.',
 };
 
@@ -53,8 +53,8 @@ export default function Contact() {
                             </div>
                             <div>
                                 <h3 className="font-bold text-xl text-primary font-poppins mb-2"><span className="text-black">Email</span> Us</h3>
-                                <p className="text-gray-600 leading-relaxed">admissions@swadhaya.edu</p>
-                                <p className="text-gray-600 leading-relaxed">info@swadhaya.edu</p>
+                                <p className="text-gray-600 leading-relaxed">admissions@swadhyay.edu</p>
+                                <p className="text-gray-600 leading-relaxed">info@swadhyay.edu</p>
                             </div>
                         </div>
 
